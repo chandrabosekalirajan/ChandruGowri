@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Gowri & Chandra Bose - Wedding Invitation</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -26,12 +26,9 @@
         }
 
         @keyframes sealPulse {
-
-            0%,
-            100% {
+            0%, 100% {
                 transform: translate(-50%, -50%) scale(1);
             }
-
             50% {
                 transform: translate(-50%, -50%) scale(1.08);
             }
@@ -45,7 +42,6 @@
             0% {
                 transform: translateX(-100%);
             }
-
             100% {
                 transform: translateX(200%);
             }
@@ -57,51 +53,23 @@
 
         /* Music Bar Animations */
         @keyframes dance1 {
-
-            0%,
-            100% {
-                height: 4px;
-            }
-
-            50% {
-                height: 16px;
-            }
+            0%, 100% { height: 4px; }
+            50% { height: 16px; }
         }
 
         @keyframes dance2 {
-
-            0%,
-            100% {
-                height: 12px;
-            }
-
-            50% {
-                height: 6px;
-            }
+            0%, 100% { height: 12px; }
+            50% { height: 6px; }
         }
 
         @keyframes dance3 {
-
-            0%,
-            100% {
-                height: 8px;
-            }
-
-            50% {
-                height: 18px;
-            }
+            0%, 100% { height: 8px; }
+            50% { height: 18px; }
         }
 
         @keyframes dance4 {
-
-            0%,
-            100% {
-                height: 14px;
-            }
-
-            50% {
-                height: 4px;
-            }
+            0%, 100% { height: 14px; }
+            50% { height: 4px; }
         }
 
         .animate-dance-1 {
@@ -126,13 +94,8 @@
         }
 
         @keyframes spinCd {
-            from {
-                transform: rotate(0deg);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
         }
 
         .animate-spin-cd {
@@ -142,8 +105,6 @@
         .paused-spin {
             animation-play-state: paused !important;
         }
-
-
 
         /* Background Light Wash Animation (Envelope Only) */
         .light-wash {
@@ -160,15 +121,8 @@
         }
 
         @keyframes warm-breathe {
-            from {
-                opacity: .65;
-                transform: scale(.98);
-            }
-
-            to {
-                opacity: 1;
-                transform: scale(1.04);
-            }
+            from { opacity: .65; transform: scale(.98); }
+            to { opacity: 1; transform: scale(1.04); }
         }
 
         /* Ambient Orbs */
@@ -185,23 +139,11 @@
             animation: orb-drift 22s ease-in-out infinite alternate;
         }
 
-        .orb-one {
-            left: -20%;
-            top: 14%;
-        }
-
-        .orb-two {
-            right: -20%;
-            bottom: 8%;
-            background: #e79a3f;
-            animation-delay: -8s;
-        }
+        .orb-one { left: -20%; top: 14%; }
+        .orb-two { right: -20%; bottom: 8%; background: #e79a3f; animation-delay: -8s; }
 
         @keyframes orb-drift {
-            to {
-                transform: translate(7vw, -4vh) scale(1.18);
-                opacity: .32;
-            }
+            to { transform: translate(7vw, -4vh) scale(1.18); opacity: .32; }
         }
 
         /* Floating Sky Lanterns */
@@ -285,44 +227,19 @@
         }
 
         @keyframes lantern-rise {
-            0% {
-                transform: translate3d(0, 0, 0) rotate(-4deg) scale(var(--scale, 1));
-                opacity: 0;
-            }
-
-            8% {
-                opacity: var(--opacity, .88);
-            }
-
-            48% {
-                transform: translate3d(var(--drift-mid), -55vh, 0) rotate(4deg) scale(var(--scale, 1));
-            }
-
-            92% {
-                opacity: var(--opacity, .88);
-            }
-
-            100% {
-                transform: translate3d(var(--drift-end), -125vh, 0) rotate(-5deg) scale(var(--scale, 1));
-                opacity: 0;
-            }
+            0% { transform: translate3d(0, 0, 0) rotate(-4deg) scale(var(--scale, 1)); opacity: 0; }
+            8% { opacity: var(--opacity, .88); }
+            48% { transform: translate3d(var(--drift-mid), -55vh, 0) rotate(4deg) scale(var(--scale, 1)); }
+            92% { opacity: var(--opacity, .88); }
+            100% { transform: translate3d(var(--drift-end), -125vh, 0) rotate(-5deg) scale(var(--scale, 1)); opacity: 0; }
         }
 
         @keyframes burner-flicker {
-            from {
-                opacity: .7;
-                transform: translateX(-50%) scale(.88);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateX(-50%) scale(1.12);
-            }
+            from { opacity: .7; transform: translateX(-50%) scale(.88); }
+            to { opacity: 1; transform: translateX(-50%) scale(1.12); }
         }
 
-        /* Embers & Bokeh */
-        .embers,
-        .bokeh {
+        .embers, .bokeh {
             position: absolute;
             inset: 0;
             pointer-events: none;
@@ -343,23 +260,10 @@
         }
 
         @keyframes ember-rise {
-            0% {
-                transform: translate3d(0, 0, 0) scale(.7);
-                opacity: 0;
-            }
-
-            12% {
-                opacity: .9;
-            }
-
-            85% {
-                opacity: .55;
-            }
-
-            100% {
-                transform: translate3d(var(--drift), -110vh, 0) scale(0);
-                opacity: 0;
-            }
+            0% { transform: translate3d(0, 0, 0) scale(.7); opacity: 0; }
+            12% { opacity: .9; }
+            85% { opacity: .55; }
+            100% { transform: translate3d(var(--drift), -110vh, 0) scale(0); opacity: 0; }
         }
 
         .bokeh span {
@@ -374,40 +278,23 @@
         }
 
         @keyframes bokeh-pulse {
-            to {
-                opacity: .75;
-                transform: scale(1.35);
-            }
+            to { opacity: .75; transform: scale(1.35); }
         }
 
-        /* Mobile Responsiveness Improvements */
         @media (max-width: 768px) {
-            body {
-                overflow-x: hidden;
-            }
-
-            /* Ensure container scales properly on small screens */
+            body { overflow-x: hidden; }
             [data-showcase-root] {
                 width: 100% !important;
                 max-width: 100% !important;
                 border: none !important;
             }
-
-            /* Scale down headings slightly for mobile readability */
-            h1 {
-                font-size: clamp(2.5rem, 10vw, 4rem) !important;
-            }
-
-            /* Adjust gallery container sizing for touch screens */
-            #galleryContainer {
-                height: 280px !important;
-            }
+            h1 { font-size: clamp(2.5rem, 10vw, 4rem) !important; }
+            #galleryContainer { height: 280px !important; }
         }
     </style>
 </head>
 
 <body class="bg-[#f7e3cd]">
-
 
     <!-- Background Audio Element -->
     <audio id="wedding-audio" loop preload="auto">
@@ -422,9 +309,7 @@
             <div id="music-spinner" class="absolute inset-0 rounded-full animate-spin-cd"
                 style="background: linear-gradient(to right bottom, rgba(100, 14, 27, 0.8), rgb(100, 14, 27), rgba(100, 14, 27, 0.867));">
                 <div class="absolute inset-1 rounded-full border border-white/20"></div>
-                <div
-                    class="absolute inset-0 rounded-full bg-gradient-to-tr from-white/30 via-transparent to-transparent">
-                </div>
+                <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-white/30 via-transparent to-transparent"></div>
             </div>
             <div class="absolute inset-0 flex items-center justify-center">
                 <div class="flex items-end gap-0.5 h-4" id="audio-bars">
@@ -437,12 +322,10 @@
         </button>
     </div>
 
-
-    <!-- Task 1: Envelope Overlay with Background Animation -->
+    <!-- Envelope Overlay -->
     <div id="envelope-overlay" class="fixed inset-0 z-50 flex items-center justify-center overflow-hidden"
         style="background: linear-gradient(to bottom right, rgba(100,14,27,0.86), rgba(140,45,45,0.82), rgba(171,122,69,0.80)), url('./images/paper.webp') center / cover;">
 
-        <!-- Background Animation Layers -->
         <div class="light-wash" aria-hidden="true"></div>
         <div class="ambient-orb orb-one" aria-hidden="true"></div>
         <div class="ambient-orb orb-two" aria-hidden="true"></div>
@@ -450,54 +333,42 @@
         <div class="bokeh" id="bokeh" aria-hidden="true"></div>
         <div class="embers" id="embers" aria-hidden="true"></div>
 
-        <!-- Envelope Card -->
         <div class="relative z-10">
             <div class="relative w-[310px] sm:w-[340px] md:w-[520px] lg:w-[600px]">
                 <button onclick="openInvitation()"
                     style="top: 50px; width: 56px; height: 56px; transform: translate(-50%, -50%); background: radial-gradient(circle at 30% 30%, #640e1b, rgb(70, 0, 0)); box-shadow: 0 4px 20px rgba(100, 14, 27, 0.5), inset 0 2px 4px rgba(255,255,255,0.3); z-index: 30;"
                     class="absolute left-1/2 rounded-full flex items-center justify-center animate-seal-pulse focus:outline-none cursor-pointer">
                     <svg style="fill:#ffffff" viewBox="0 0 24 24" class="w-7 h-7">
-                        <path
-                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
-                        </path>
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
                     </svg>
                 </button>
                 <div class="relative rounded-lg shadow-2xl" style="box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.45);">
                     <div class="absolute inset-0 rounded-lg overflow-hidden pointer-events-none"
                         style="background: rgba(247, 227, 205, 0.98); border: 1px solid rgba(171, 122, 69, 0.15);">
-                        <img src="./images/flower1.webp" alt=""
-                            class="absolute w-[46%] md:w-[38%] max-w-[220px] top-0 left-0 -translate-x-[22%] -translate-y-[24%] -scale-x-100">
-                        <img src="./images/flower1.webp" alt=""
-                            class="absolute w-[42%] md:w-[34%] max-w-[200px] bottom-0 right-0 translate-x-[20%] translate-y-[18%] -scale-y-100">
+                        <img src="./images/flower1.webp" alt="" class="absolute w-[46%] md:w-[38%] max-w-[220px] top-0 left-0 -translate-x-[22%] -translate-y-[24%] -scale-x-100">
+                        <img src="./images/flower1.webp" alt="" class="absolute w-[42%] md:w-[34%] max-w-[200px] bottom-0 right-0 translate-x-[20%] translate-y-[18%] -scale-y-100">
                     </div>
                     <div class="relative z-10 text-center px-6 pt-28 pb-14 md:pt-24 md:pb-8">
-                        <h1
-                            class="mb-2 flex flex-col items-center leading-tight text-3xl sm:text-4xl text-[#640e1b] font-nautigal">
+                        <h1 class="mb-2 flex flex-col items-center leading-tight text-3xl sm:text-4xl text-[#640e1b] font-nautigal">
                             <span class="block w-full text-center">Gowri</span>
-                            <span
-                                class="block w-full text-center text-lg leading-none sm:text-xl font-alexbrush">&amp;</span>
+                            <span class="block w-full text-center text-lg leading-none sm:text-xl font-alexbrush">&amp;</span>
                             <span class="block w-full text-center">Chandra Bose</span>
                         </h1>
                         <div class="flex items-center justify-center gap-3 mb-2">
-                            <div class="w-10 h-px" style="background: linear-gradient(to right, transparent, #ab7a45);">
-                            </div>
+                            <div class="w-10 h-px" style="background: linear-gradient(to right, transparent, #ab7a45);"></div>
                             <span class="text-sm text-[#ab7a45] opacity-70">❦</span>
-                            <div class="w-10 h-px" style="background: linear-gradient(to left, transparent, #ab7a45);">
-                            </div>
+                            <div class="w-10 h-px" style="background: linear-gradient(to left, transparent, #ab7a45);"></div>
                         </div>
                         <div class="text-[18px] mb-5 flex flex-col items-center font-lora text-[#640e1b]/80">
                             <span>November 20, 2026</span>
                         </div>
                         <div class="mb-6">
-                            <p class="text-[18px] font-light mb-2 font-lora text-[#640e1b]/80">Cordially Invite You All!
-                            </p>
+                            <p class="text-[18px] font-light mb-2 font-lora text-[#640e1b]/80">Cordially Invite You All!</p>
                         </div>
                         <button onclick="openInvitation()"
                             class="relative px-8 py-2.5 text-lg font-semibold sm:font-medium rounded-full shadow-lg cursor-pointer flex w-fit items-center justify-center mx-auto overflow-hidden bg-[#640e1b] text-white font-lora transition-transform hover:scale-105">
                             <span>Open</span>
-                            <div
-                                class="absolute top-0 h-full w-8 pointer-events-none bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shine">
-                            </div>
+                            <div class="absolute top-0 h-full w-8 pointer-events-none bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shine"></div>
                         </button>
                     </div>
                 </div>
@@ -516,104 +387,54 @@
         <!-- Section 1 -->
         <section dir="ltr" class="relative isolate w-full overflow-hidden pt-[13.2%] pb-[16.6%]">
             <div class="relative mx-auto w-full max-w-[480px] md:max-w-[680px]">
-                <div aria-hidden="true"
-                    class="pointer-events-none absolute bg-contain bg-center bg-no-repeat top-0 left-[1.4%] mt-[-17.9%] z-[2] w-[32.7%]"
-                    style="aspect-ratio: 1086 / 1448; background-image: url('./images/bells.webp');">
-                </div>
-                <div aria-hidden="true"
-                    class="pointer-events-none absolute bg-contain bg-center bg-no-repeat top-0 md:top-[-5%] left-[40.6%] mt-[-17.5%] z-[3] w-[77.1%] md:w-[90%]"
-                    style="aspect-ratio: 1 / 1; background-image: url('./images/flower1.webp');">
-                </div>
+                <div aria-hidden="true" class="pointer-events-none absolute bg-contain bg-center bg-no-repeat top-0 left-[1.4%] mt-[-17.9%] z-[2] w-[32.7%]"
+                    style="aspect-ratio: 1086 / 1448; background-image: url('./images/bells.webp');"></div>
+                <div aria-hidden="true" class="pointer-events-none absolute bg-contain bg-center bg-no-repeat top-0 md:top-[-5%] left-[40.6%] mt-[-17.5%] z-[3] w-[77.1%] md:w-[90%]"
+                    style="aspect-ratio: 1 / 1; background-image: url('./images/flower1.webp');"></div>
                 <div class="relative mx-auto w-[96.1%]" style="aspect-ratio: 424 / 529;">
-                    <div aria-hidden="true"
-                        class="pointer-events-none absolute inset-0 -z-10 bg-contain bg-center bg-no-repeat opacity-[0.54]"
-                        style="background-image: url('./images/arch-frame.webp');">
-                    </div>
-                    <div aria-hidden="true"
-                        class="pointer-events-none absolute left-1/2 top-[20.0%] w-[13.7%] -translate-x-1/2 bg-contain bg-center bg-no-repeat"
-                        style="aspect-ratio: 579 / 699; background-image: url('./images/ganesha.webp');">
-                    </div>
-                    <div
-                        class="absolute left-1/2 top-[43.9%] z-20 flex w-[68%] -translate-x-1/2 flex-col items-center gap-[1.2%] text-center leading-[1.15]">
-                        <div class="w-full"><span class="inline-block"
-                                style="font-family: 'The Nautigal', cursive; color: rgb(100, 14, 27); font-size: clamp(30px, 12.5vw, 85px);">Gowri</span>
-                        </div>
-                        <span class="block"
-                            style="font-family: 'Alex Brush', 'The Nautigal', cursive; color: rgb(100, 14, 27); font-size: clamp(18px, 6.8vw, 47px);">&amp;</span>
-                        <div class="w-full"><span class="inline-block"
-                                style="font-family: 'The Nautigal', cursive; color: rgb(100, 14, 27); font-size: clamp(30px, 12.5vw, 85px);">Chandra
-                                Bose</span></div>
+                    <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10 bg-contain bg-center bg-no-repeat opacity-[0.54]"
+                        style="background-image: url('./images/arch-frame.webp');"></div>
+                    <div aria-hidden="true" class="pointer-events-none absolute left-1/2 top-[20.0%] w-[13.7%] -translate-x-1/2 bg-contain bg-center bg-no-repeat"
+                        style="aspect-ratio: 579 / 699; background-image: url('./images/ganesha.webp');"></div>
+                    <div class="absolute left-1/2 top-[43.9%] z-20 flex w-[68%] -translate-x-1/2 flex-col items-center gap-[1.2%] text-center leading-[1.15]">
+                        <div class="w-full"><span class="inline-block" style="font-family: 'The Nautigal', cursive; color: rgb(100, 14, 27); font-size: clamp(30px, 12.5vw, 85px);">Gowri</span></div>
+                        <span class="block" style="font-family: 'Alex Brush', 'The Nautigal', cursive; color: rgb(100, 14, 27); font-size: clamp(18px, 6.8vw, 47px);">&amp;</span>
+                        <div class="w-full"><span class="inline-block" style="font-family: 'The Nautigal', cursive; color: rgb(100, 14, 27); font-size: clamp(30px, 12.5vw, 85px);">Chandra Bose</span></div>
                     </div>
                 </div>
                 <div class="relative z-0 mt-[-59.6%] w-full" style="aspect-ratio: 441 / 546;">
-                    <div aria-hidden="true"
-                        class="pointer-events-none absolute bg-contain bg-center bg-no-repeat left-[74.8%] top-0 z-[2] w-[55.8%]"
-                        style="aspect-ratio: 808 / 1402; background-image: url('./images/sandstone.webp');">
-                    </div>
-                    <div aria-hidden="true"
-                        class="pointer-events-none absolute bg-contain bg-center bg-no-repeat left-[-25.9%] top-[13.4%] z-[1] w-[176.6%]"
-                        style="aspect-ratio: 1635 / 962; background-image: url('./images/castle.webp');">
-                    </div>
-                    <div aria-hidden="true"
-                        class="pointer-events-none absolute bg-contain bg-center bg-no-repeat left-[54.6%] md:left-[70%] top-[60.6%] z-[4] w-[47.6%]"
-                        style="aspect-ratio: 1 / 1; background-image: url('./images/flower2.webp');">
-                    </div>
-                    <div aria-hidden="true"
-                        class="pointer-events-none absolute bg-contain bg-center bg-no-repeat right-[54.6%] md:right-[70%] top-[60.6%] z-[4] w-[47.6%]"
-                        style="aspect-ratio: 1 / 1; background-image: url('./images/flower2.webp'); transform: scaleX(-1);">
-                    </div>
-                    <div aria-hidden="true"
-                        class="pointer-events-none absolute bg-contain bg-center bg-no-repeat left-1/2 top-[75.5%] z-[3] w-[58.5%] -translate-x-1/2"
-                        style="aspect-ratio: 1774 / 887; background-image: url('./images/fence.webp');">
-                    </div>
+                    <div aria-hidden="true" class="pointer-events-none absolute bg-contain bg-center bg-no-repeat left-[74.8%] top-0 z-[2] w-[55.8%]"
+                        style="aspect-ratio: 808 / 1402; background-image: url('./images/sandstone.webp');"></div>
+                    <div aria-hidden="true" class="pointer-events-none absolute bg-contain bg-center bg-no-repeat left-[-25.9%] top-[13.4%] z-[1] w-[176.6%]"
+                        style="aspect-ratio: 1635 / 962; background-image: url('./images/castle.webp');"></div>
+                    <div aria-hidden="true" class="pointer-events-none absolute bg-contain bg-center bg-no-repeat left-[54.6%] md:left-[70%] top-[60.6%] z-[4] w-[47.6%]"
+                        style="aspect-ratio: 1 / 1; background-image: url('./images/flower2.webp');"></div>
+                    <div aria-hidden="true" class="pointer-events-none absolute bg-contain bg-center bg-no-repeat right-[54.6%] md:right-[70%] top-[60.6%] z-[4] w-[47.6%]"
+                        style="aspect-ratio: 1 / 1; background-image: url('./images/flower2.webp'); transform: scaleX(-1);"></div>
+                    <div aria-hidden="true" class="pointer-events-none absolute bg-contain bg-center bg-no-repeat left-1/2 top-[75.5%] z-[3] w-[58.5%] -translate-x-1/2"
+                        style="aspect-ratio: 1774 / 887; background-image: url('./images/fence.webp');"></div>
                 </div>
             </div>
         </section>
 
         <!-- Section 2: Ceremony Info -->
         <section class="relative isolate z-10 w-full px-[8.5%] pt-[5.2%] md:px-[12%] md:pt-[5.2%]">
-            <div aria-hidden="true"
-                class="pointer-events-none absolute bg-contain bg-center bg-no-repeat -z-10 opacity-10 top-0 left-[-18.8%] mt-[12.0%] w-[244%] md:w-[170%]"
-                style="will-change: transform; aspect-ratio: 1448 / 1086; background-image: url('./images/castle2.webp'); transform: translateY(40px);">
-            </div>
-            <div aria-hidden="true"
-                class="pointer-events-none absolute bg-contain bg-center bg-no-repeat top-0 left-[6.1%] mt-[-9.5%] z-[1] w-[87.5%]"
-                style="aspect-ratio: 1302 / 253; background-image: url('./images/pattern.webp');">
-            </div>
-            <div aria-hidden="true"
-                class="pointer-events-none absolute bg-contain bg-center bg-no-repeat top-0 left-[-40%] md:left-[-23%] mt-[15.6%] z-[1] w-[56.7%] md:w-[42%]"
-                style="will-change: transform; aspect-ratio: 837 / 1843; background-image: url('./images/sandstone-flower.webp'); transform: translateY(49.05px);">
-            </div>
-            <div aria-hidden="true"
-                class="pointer-events-none absolute bg-contain bg-center bg-no-repeat top-0 left-[80%] mt-[61.0%] z-[1] w-[52.4%] md:w-[40%]"
-                style="will-change: transform; aspect-ratio: 806 / 1254; background-image: url('./images/flower3-decoration.webp'); transform: translateY(-34.335px);">
-            </div>
             <div class="relative z-10 flex flex-col gap-6 md:gap-8">
                 <h2 class="font-bold text-[20px] md:text-[26px] text-center uppercase tracking-[0.04em]"
                     style="color: rgb(100, 14, 27); font-family: 'Times New Roman', Times, serif; font-weight: 700; text-transform: uppercase;">
                     <span dir="auto">CEREMONY INFO</span></h2>
                 <div class="grid w-full grid-cols-[1fr_auto_1fr] grid-rows-[repeat(4,auto)] justify-center gap-x-3 gap-y-1 md:gap-x-7"
                     style="color: rgb(100, 14, 27); font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif;">
-                    <div
-                        class="row-span-4 grid grid-rows-subgrid justify-items-center justify-self-center min-w-0 max-w-[170px] text-center md:max-w-[270px]">
-                        <span class="text-[12px] md:text-[15px] mb-[2px]" style="color: rgb(171, 122, 69);"><span
-                                dir="auto">Mr. &amp; Mrs.</span></span>
-                        <span class="font-semibold [overflow-wrap:anywhere]"
-                            style="color: rgb(100, 14, 27); font-size: 10px;"><span dir="auto">S.Kalirajan</span></span>
-                        <span class="font-semibold [overflow-wrap:anywhere]"
-                            style="color: rgb(100, 14, 27); font-size: 10px;"><span dir="auto">K.Bala
-                                Saraswathi</span></span>
+                    <div class="row-span-4 grid grid-rows-subgrid justify-items-center justify-self-center min-w-0 max-w-[170px] text-center md:max-w-[270px]">
+                        <span class="text-[12px] md:text-[15px] mb-[2px]" style="color: rgb(171, 122, 69);"><span dir="auto">Mr. &amp; Mrs.</span></span>
+                        <span class="font-semibold [overflow-wrap:anywhere]" style="color: rgb(100, 14, 27); font-size: 10px;"><span dir="auto">S.Kalirajan</span></span>
+                        <span class="font-semibold [overflow-wrap:anywhere]" style="color: rgb(100, 14, 27); font-size: 10px;"><span dir="auto">K.Bala Saraswathi</span></span>
                     </div>
-                    <div class="row-span-4 h-[50px] w-[1px] self-center md:h-[70px]"
-                        style="background-color: rgb(171, 122, 69); opacity: 0.6;"></div>
-                    <div
-                        class="row-span-4 grid grid-rows-subgrid justify-items-center justify-self-center min-w-0 max-w-[170px] text-center md:max-w-[270px]">
-                        <span class="text-[12px] md:text-[15px] mb-[2px]" style="color: rgb(171, 122, 69);"><span
-                                dir="auto">Mr. &amp; Mrs.</span></span>
-                        <span class="font-semibold [overflow-wrap:anywhere]"
-                            style="color: rgb(100, 14, 27); font-size: 10px;"><span dir="auto">S.Kalirajan</span></span>
-                        <span class="font-semibold [overflow-wrap:anywhere]"
-                            style="color: rgb(100, 14, 27); font-size: 10px;"><span dir="auto">K.Susila</span></span>
+                    <div class="row-span-4 h-[50px] w-[1px] self-center md:h-[70px]" style="background-color: rgb(171, 122, 69); opacity: 0.6;"></div>
+                    <div class="row-span-4 grid grid-rows-subgrid justify-items-center justify-self-center min-w-0 max-w-[170px] text-center md:max-w-[270px]">
+                        <span class="text-[12px] md:text-[15px] mb-[2px]" style="color: rgb(171, 122, 69);"><span dir="auto">Mr. &amp; Mrs.</span></span>
+                        <span class="font-semibold [overflow-wrap:anywhere]" style="color: rgb(100, 14, 27); font-size: 10px;"><span dir="auto">S.Kalirajan</span></span>
+                        <span class="font-semibold [overflow-wrap:anywhere]" style="color: rgb(100, 14, 27); font-size: 10px;"><span dir="auto">K.Susila</span></span>
                     </div>
                 </div>
                 <div class="relative flex flex-col gap-1 text-center text-[16px] md:text-[20px] uppercase mx-auto md:max-w-[560px]"
@@ -623,119 +444,74 @@
                 <div class="w-full min-w-0 relative flex flex-col items-center text-center gap-3 md:gap-4">
                     <h3 class="w-[80%] min-h-[80px] flex items-center justify-center leading-[50px] md:leading-[68px] whitespace-nowrap"
                         style="font-size: 58px; font-family: 'EB Garamond', serif; color: rgb(100, 14, 27);">Gowri</h3>
-                    <div class="text-xs uppercase tracking-[0.2em]"
-                        style="color: rgb(171, 122, 69); font-family: 'Cormorant Garamond', 'Times New Roman', serif; letter-spacing: 0.16em;">
+                    <div class="text-xs uppercase tracking-[0.2em]" style="color: rgb(171, 122, 69); font-family: 'Cormorant Garamond', 'Times New Roman', serif; letter-spacing: 0.16em;">
                         <span dir="auto">Bride</span></div>
-                    <div class="text-[30px] md:text-[38px]"
-                        style="color: rgb(100, 14, 27); font-family: 'EB Garamond', serif;">&amp;</div>
+                    <div class="text-[30px] md:text-[38px]" style="color: rgb(100, 14, 27); font-family: 'EB Garamond', serif;">&amp;</div>
                     <h3 class="w-[80%] min-h-[80px] flex items-center justify-center leading-[50px] md:leading-[68px] whitespace-nowrap"
-                        style="font-size: 58px; font-family: 'EB Garamond', serif; color: rgb(100, 14, 27);">Chandra
-                        Bose</h3>
-                    <div class="text-xs uppercase tracking-[0.2em]"
-                        style="color: rgb(171, 122, 69); font-family: 'Cormorant Garamond', 'Times New Roman', serif; letter-spacing: 0.16em;">
+                        style="font-size: 58px; font-family: 'EB Garamond', serif; color: rgb(100, 14, 27);">Chandra Bose</h3>
+                    <div class="text-xs uppercase tracking-[0.2em]" style="color: rgb(171, 122, 69); font-family: 'Cormorant Garamond', 'Times New Roman', serif; letter-spacing: 0.16em;">
                         <span dir="auto">Groom</span></div>
                 </div>
                 <div class="relative w-full pb-10">
-                    <div class="relative flex flex-col items-center gap-4 md:gap-5 text-center"
-                        style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif;">
-                        <div style="color: rgb(171, 122, 69);"><span dir="auto"
-                                class="whitespace-pre-line font-normal text-[16px] md:text-[20px] text-center">Engagement
-                                ceremony</span></div>
-                        <p class="font-normal text-[14px] md:text-[15px] text-center uppercase"
-                            style="color: rgb(171, 122, 69);">AT 7:00 PM</p>
+                    <div class="relative flex flex-col items-center gap-4 md:gap-5 text-center" style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif;">
+                        <div style="color: rgb(171, 122, 69);"><span dir="auto" class="whitespace-pre-line font-normal text-[16px] md:text-[20px] text-center">Engagement ceremony</span></div>
+                        <p class="font-normal text-[14px] md:text-[15px] text-center uppercase" style="color: rgb(171, 122, 69);">AT 7:00 PM</p>
                         <div class="flex items-center gap-6" style="color: rgb(100, 14, 27);">
-                            <span class="text-[12px] md:text-[16px]"
-                                style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif; text-align: right;"><span
-                                    dir="auto">THURSDAY</span></span>
-                            <span class="flex items-center justify-center text-[20px] leading-none md:text-[26px]"
-                                style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif; color: rgb(171, 122, 69); opacity: 0.7;">|</span>
-                            <span class="text-[30px] md:text-[40px]"
-                                style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif;">19</span>
-                            <span class="flex items-center justify-center text-[20px] leading-none md:text-[26px]"
-                                style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif; color: rgb(171, 122, 69); opacity: 0.7;">|</span>
-                            <span class="text-[12px] md:text-[16px]"
-                                style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif; text-align: left;"><span
-                                    dir="auto">NOVEMBER</span></span>
+                            <span class="text-[12px] md:text-[16px]" style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif; text-align: right;"><span dir="auto">THURSDAY</span></span>
+                            <span class="flex items-center justify-center text-[20px] leading-none md:text-[26px]" style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif; color: rgb(171, 122, 69); opacity: 0.7;">|</span>
+                            <span class="text-[30px] md:text-[40px]" style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif;">19</span>
+                            <span class="flex items-center justify-center text-[20px] leading-none md:text-[26px]" style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif; color: rgb(171, 122, 69); opacity: 0.7;">|</span>
+                            <span class="text-[12px] md:text-[16px]" style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif; text-align: left;"><span dir="auto">NOVEMBER</span></span>
                         </div>
-                        <div class="text-[18px] md:text-[24px]"
-                            style="color: rgb(100, 14, 27); font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif;">
-                            2026</div>
+                        <div class="text-[18px] md:text-[24px]" style="color: rgb(100, 14, 27); font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif;">2026</div>
                     </div>
-                    <img alt="" aria-hidden="true"
-                        class="mx-auto block h-auto max-w-[300px] object-contain w-[64.8%] mt-6 md:mt-8" loading="lazy"
-                        decoding="async" src="./images/gold-line.webp">
                 </div>
             </div>
         </section>
 
-        <!-- Section 3: 3D Photo Gallery (With Auto-Rotation) -->
+        <!-- Section 3: 3D Photo Gallery -->
         <section class="relative isolate z-10 w-full px-[9%] pt-[7%] pb-[10.9%] md:px-[12%] md:pt-[4%] md:pb-[7%]">
             <div class="relative z-10 flex w-full flex-col items-center">
-                <div class="relative z-10 flex w-full flex-col items-center">
-                    <h2 class="font-bold text-[20px] md:text-[26px] text-center uppercase tracking-[0.04em] mb-5"
-                        style="color: rgb(100, 14, 27); font-family: 'Times New Roman', Times, serif; font-weight: 700; text-transform: uppercase;">
-                        <span dir="auto">Photo Gallery</span>
-                    </h2>
-                    <div class="mt-6 w-full max-w-[432px] md:max-w-[600px]">
-                        <div class="relative h-[340px] md:h-[520px] touch-pan-y" id="galleryContainer">
-                            <button type="button" id="prevBtn" aria-label="Previous photo"
-                                class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-[200] w-8 h-8 items-center justify-center rounded-full bg-stone-200/60 hover:bg-stone-200 transition-colors shadow-md">
-                                <svg class="w-4 h-4 text-[#640e1b]" fill="none" stroke="currentColor" stroke-width="2.5"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M15.75 19.5L8.25 12l7.5-7.5"></path>
-                                </svg>
-                            </button>
-                            <button type="button" id="nextBtn" aria-label="Next photo"
-                                class="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-[200] w-8 h-8 items-center justify-center rounded-full bg-stone-200/60 hover:bg-stone-200 transition-colors shadow-md">
-                                <svg class="w-4 h-4 text-[#640e1b]" fill="none" stroke="currentColor" stroke-width="2.5"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5">
-                                    </path>
-                                </svg>
-                            </button>
+                <h2 class="font-bold text-[20px] md:text-[26px] text-center uppercase tracking-[0.04em] mb-5"
+                    style="color: rgb(100, 14, 27); font-family: 'Times New Roman', Times, serif; font-weight: 700; text-transform: uppercase;">
+                    <span dir="auto">Photo Gallery</span>
+                </h2>
+                <div class="mt-6 w-full max-w-[432px] md:max-w-[600px]">
+                    <div class="relative h-[340px] md:h-[520px] touch-pan-y" id="galleryContainer">
+                        <button type="button" id="prevBtn" aria-label="Previous photo"
+                            class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-[200] w-8 h-8 items-center justify-center rounded-full bg-stone-200/60 hover:bg-stone-200 transition-colors shadow-md">
+                            <svg class="w-4 h-4 text-[#640e1b]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+                            </svg>
+                        </button>
+                        <button type="button" id="nextBtn" aria-label="Next photo"
+                            class="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-[200] w-8 h-8 items-center justify-center rounded-full bg-stone-200/60 hover:bg-stone-200 transition-colors shadow-md">
+                            <svg class="w-4 h-4 text-[#640e1b]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+                            </svg>
+                        </button>
 
-                            <div class="relative w-full h-full flex items-center justify-center"
-                                style="perspective: 1000px;">
-                                <!-- Photo 1 (Square Tile) -->
-                                <div class="gallery-item absolute h-[92%] rounded-2xl overflow-hidden shadow-xl cursor-pointer transition-all ease-in-out ring-2 ring-white/30"
-                                    data-index="0"
-                                    style="aspect-ratio: 1.04 / 1; transition-duration: 1100ms; transform: translateX(0%) translateZ(0px) rotateY(0deg) scale(1); opacity: 1; z-index: 100;">
-                                    <img alt="Wedding photo 1" class="h-full w-full object-cover"
-                                        src="./images/3d8abe6f-94af-45c1-9cda-126e6e379462.jpg"
-                                        style="object-position: 50% 50%;">
-                                </div>
-                                <!-- Photo 2 (Middle - Portrait Rectangle 3D Effect) -->
-                                <div class="gallery-item absolute h-[92%] rounded-2xl overflow-hidden shadow-xl cursor-pointer transition-all ease-in-out"
-                                    data-index="1"
-                                    style="aspect-ratio: 0.5 / 1; transition-duration: 1100ms; transform: translateX(60%) translateZ(-150px) rotateY(45deg) scale(0.85); opacity: 0.75; z-index: 99;">
-                                    <img alt="Wedding photo 2" class="h-full w-full object-cover"
-                                        src="./images/ff25203a-2dea-4583-9d5b-d298b87a1967.jpg"
-                                        style="object-position: 50% 50%;">
-                                </div>
-                                <!-- Photo 3 (Square Tile) -->
-                                <div class="gallery-item absolute h-[92%] rounded-2xl overflow-hidden shadow-xl cursor-pointer transition-all ease-in-out"
-                                    data-index="2"
-                                    style="aspect-ratio: 1 / 1; transition-duration: 1100ms; transform: translateX(-60%) translateZ(-150px) rotateY(-45deg) scale(0.85); opacity: 0.75; z-index: 99;">
-                                    <img alt="Wedding photo 3" class="h-full w-full object-cover"
-                                        src="./images/005ea9e9-5bfa-442a-a8a7-4e12c6a17673.jpg"
-                                        style="object-position: 50% 50%;">
-                                </div>
+                        <div class="relative w-full h-full flex items-center justify-center" style="perspective: 1000px;">
+                            <div class="gallery-item absolute h-[92%] rounded-2xl overflow-hidden shadow-xl cursor-pointer transition-all ease-in-out ring-2 ring-white/30"
+                                data-index="0" style="aspect-ratio: 1.04 / 1; transition-duration: 800ms;">
+                                <img alt="Wedding photo 1" class="h-full w-full object-cover" src="./images/3d8abe6f-94af-45c1-9cda-126e6e379462.jpg" style="object-position: 50% 50%;">
+                            </div>
+                            <div class="gallery-item absolute h-[92%] rounded-2xl overflow-hidden shadow-xl cursor-pointer transition-all ease-in-out"
+                                data-index="1" style="aspect-ratio: 0.5 / 1; transition-duration: 800ms;">
+                                <img alt="Wedding photo 2" class="h-full w-full object-cover" src="./images/ff25203a-2dea-4583-9d5b-d298b87a1967.jpg" style="object-position: 50% 50%;">
+                            </div>
+                            <div class="gallery-item absolute h-[92%] rounded-2xl overflow-hidden shadow-xl cursor-pointer transition-all ease-in-out"
+                                data-index="2" style="aspect-ratio: 1 / 1; transition-duration: 800ms;">
+                                <img alt="Wedding photo 3" class="h-full w-full object-cover" src="./images/005ea9e9-5bfa-442a-a8a7-4e12c6a17673.jpg" style="object-position: 50% 50%;">
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Indicators -->
-                        <div class="flex justify-center gap-1.5 mt-4" id="galleryDots">
-                            <button type="button" aria-label="Go to photo 1"
-                                class="dot-btn rounded-full transition-all duration-300 w-6 h-2 bg-[#640e1b] opacity-70"
-                                data-index="0"></button>
-                            <button type="button" aria-label="Go to photo 2"
-                                class="dot-btn rounded-full transition-all duration-300 w-2 h-2 bg-[#640e1b] opacity-25 hover:opacity-40"
-                                data-index="1"></button>
-                            <button type="button" aria-label="Go to photo 3"
-                                class="dot-btn rounded-full transition-all duration-300 w-2 h-2 bg-[#640e1b] opacity-25 hover:opacity-40"
-                                data-index="2"></button>
-                        </div>
+                    <!-- Indicators -->
+                    <div class="flex justify-center gap-1.5 mt-4" id="galleryDots">
+                        <button type="button" aria-label="Go to photo 1" class="dot-btn rounded-full transition-all duration-300 w-6 h-2 bg-[#640e1b] opacity-70" data-index="0"></button>
+                        <button type="button" aria-label="Go to photo 2" class="dot-btn rounded-full transition-all duration-300 w-2 h-2 bg-[#640e1b] opacity-25 hover:opacity-40" data-index="1"></button>
+                        <button type="button" aria-label="Go to photo 3" class="dot-btn rounded-full transition-all duration-300 w-2 h-2 bg-[#640e1b] opacity-25 hover:opacity-40" data-index="2"></button>
                     </div>
                 </div>
             </div>
@@ -743,23 +519,6 @@
 
         <!-- Section 4: Wedding Reception & Calendar / Countdown -->
         <section class="relative isolate z-10 w-full px-[8%] pt-[13%] pb-[10%] md:px-[12%] md:pt-[9%]">
-            <div aria-hidden="true"
-                class="pointer-events-none absolute bg-contain bg-center bg-no-repeat -z-10 opacity-10 top-0 left-[-103.2%] mt-[71.7%] w-[244%] md:w-[170%]"
-                style="will-change: transform; aspect-ratio: 1448 / 1086; background-image: url('./images/castle2.webp'); transform: translateY(40px) scaleX(-1);">
-            </div>
-            <div aria-hidden="true"
-                class="pointer-events-none absolute bg-contain bg-center bg-no-repeat top-0 left-[6.1%] mt-[-5.9%] z-[1] w-[87.5%]"
-                style="aspect-ratio: 1302 / 253; background-image: url('./images/pattern.webp');">
-            </div>
-            <div aria-hidden="true"
-                class="pointer-events-none absolute bg-contain bg-center bg-no-repeat top-0 left-[83%] mt-[-6.1%] z-[1] w-[56.7%] md:w-[42%]"
-                style="will-change: transform; aspect-ratio: 837 / 1843; background-image: url('./images/sandstone-flower.webp'); transform: translateY(194.6px) scaleX(-1);">
-            </div>
-            <div aria-hidden="true"
-                class="pointer-events-none absolute bg-contain bg-center bg-no-repeat top-0 md:top-[-15%] left-[-30%] md:left-[-17%] mt-[41.0%] z-[1] w-[52.4%] md:w-[40%]"
-                style="will-change: transform; aspect-ratio: 806 / 1254; background-image: url('./images/flower3-decoration.webp'); transform: translateY(-136.22px) scaleX(-1);">
-            </div>
-
             <div class="relative z-10 flex w-full flex-col items-center">
                 <h2 class="font-bold text-[20px] md:text-[26px] text-center uppercase tracking-[0.04em]"
                     style="color: rgb(100, 14, 27); font-family: 'Times New Roman', Times, serif; font-weight: 700; text-transform: uppercase;">
@@ -771,25 +530,15 @@
                         style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif; color: rgb(100, 14, 27); font-weight: 600;">
                         <span dir="auto">The wedding ceremony will take place at:</span>
                     </h3>
-                    <div class="text-[20px] md:text-[30px]"
-                        style="color: rgb(171, 122, 69); font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif;">
-                        6:30 AM</div>
-                    <div class="flex items-center gap-6"
-                        style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif;">
-                        <span class="text-[12px] md:text-[16px] uppercase"
-                            style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif; text-align: right;"><span
-                                dir="auto">FRIDAY</span></span>
+                    <div class="text-[20px] md:text-[30px]" style="color: rgb(171, 122, 69); font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif;">6:30 AM</div>
+                    <div class="flex items-center gap-6" style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif;">
+                        <span class="text-[12px] md:text-[16px] uppercase" style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif; text-align: right;"><span dir="auto">FRIDAY</span></span>
                         <div class="h-6 w-[1px] md:h-8" style="background-color: rgb(171, 122, 69);"></div>
-                        <span class="text-[30px] md:text-[40px]"
-                            style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif; color: rgb(100, 14, 27);">20</span>
+                        <span class="text-[30px] md:text-[40px]" style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif; color: rgb(100, 14, 27);">20</span>
                         <div class="h-6 w-[1px] md:h-8" style="background-color: rgb(171, 122, 69);"></div>
-                        <span class="text-[12px] md:text-[16px] uppercase"
-                            style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif; text-align: left;"><span
-                                dir="auto">NOVEMBER</span></span>
+                        <span class="text-[12px] md:text-[16px] uppercase" style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif; text-align: left;"><span dir="auto">NOVEMBER</span></span>
                     </div>
-                    <div class="text-[18px] md:text-[24px]"
-                        style="color: rgb(171, 122, 69); font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif;">
-                        2026</div>
+                    <div class="text-[18px] md:text-[24px]" style="color: rgb(171, 122, 69); font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif;">2026</div>
 
                     <!-- Countdown Display -->
                     <div class="flex items-center justify-center flex-col mt-4">
@@ -806,34 +555,23 @@
                 </div>
 
                 <!-- Calendar Widget Frame -->
-                <div class="relative mx-auto mt-8 w-full max-w-[330px] md:mt-10 md:max-w-[470px]"
-                    style="aspect-ratio: 359 / 339;">
-                    <div aria-hidden="true"
-                        class="pointer-events-none absolute inset-0 bg-contain bg-center bg-no-repeat"
-                        style="background-image: url('./images/calendar-frame.webp');">
-                    </div>
+                <div class="relative mx-auto mt-8 w-full max-w-[330px] md:mt-10 md:max-w-[470px]" style="aspect-ratio: 359 / 339;">
+                    <div aria-hidden="true" class="pointer-events-none absolute inset-0 bg-contain bg-center bg-no-repeat"
+                        style="background-image: url('./images/calendar-frame.webp');"></div>
                     <div class="relative flex h-full w-full items-center justify-center px-[11%] py-[9%]">
-                        <div dir="ltr"
-                            class="w-full max-w-[280px] md:max-w-[310px] mx-auto rounded-lg overflow-hidden border !max-w-none !rounded-none !border-0"
+                        <div dir="ltr" class="w-full max-w-[280px] md:max-w-[310px] mx-auto rounded-lg overflow-hidden border !max-w-none !rounded-none !border-0"
                             style="border-color: color-mix(in srgb, rgb(100, 14, 27) 27%, transparent); color: rgb(100, 14, 27);">
                             <div class="text-center py-2.5 text-[13px] md:text-[14px] font-semibold tracking-wide border-b text-[15px] md:text-[18px] font-bold"
                                 style="border-color: color-mix(in srgb, rgb(100, 14, 27) 27%, transparent); font-family: 'Times New Roman', Times, serif; color: rgb(100, 14, 27);">
                                 November 2026</div>
                             <div class="grid grid-cols-7 border-b-2" style="border-color: rgb(100, 14, 27);">
-                                <div class="text-center py-1.5 text-[10px] md:text-[11px] font-medium opacity-60">Mo
-                                </div>
-                                <div class="text-center py-1.5 text-[10px] md:text-[11px] font-medium opacity-60">Tu
-                                </div>
-                                <div class="text-center py-1.5 text-[10px] md:text-[11px] font-medium opacity-60">We
-                                </div>
-                                <div class="text-center py-1.5 text-[10px] md:text-[11px] font-medium opacity-60">Th
-                                </div>
-                                <div class="text-center py-1.5 text-[10px] md:text-[11px] font-medium opacity-60">Fr
-                                </div>
-                                <div class="text-center py-1.5 text-[10px] md:text-[11px] font-medium opacity-60">Sa
-                                </div>
-                                <div class="text-center py-1.5 text-[10px] md:text-[11px] font-medium opacity-60">Su
-                                </div>
+                                <div class="text-center py-1.5 text-[10px] md:text-[11px] font-medium opacity-60">Mo</div>
+                                <div class="text-center py-1.5 text-[10px] md:text-[11px] font-medium opacity-60">Tu</div>
+                                <div class="text-center py-1.5 text-[10px] md:text-[11px] font-medium opacity-60">We</div>
+                                <div class="text-center py-1.5 text-[10px] md:text-[11px] font-medium opacity-60">Th</div>
+                                <div class="text-center py-1.5 text-[10px] md:text-[11px] font-medium opacity-60">Fr</div>
+                                <div class="text-center py-1.5 text-[10px] md:text-[11px] font-medium opacity-60">Sa</div>
+                                <div class="text-center py-1.5 text-[10px] md:text-[11px] font-medium opacity-60">Su</div>
                             </div>
                             <div class="grid grid-cols-7 gap-y-0.5 px-1 py-2">
                                 <div class="flex items-center justify-center h-[30px] md:h-[34px]"></div>
@@ -842,84 +580,50 @@
                                 <div class="flex items-center justify-center h-[30px] md:h-[34px]"></div>
                                 <div class="flex items-center justify-center h-[30px] md:h-[34px]"></div>
                                 <div class="flex items-center justify-center h-[30px] md:h-[34px]"></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">1</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">2</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">3</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">4</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">5</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">6</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">7</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">8</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">9</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">10</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">11</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">12</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">13</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">14</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">15</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">16</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">17</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">18</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">19</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">1</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">2</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">3</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">4</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">5</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">6</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">7</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">8</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">9</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">10</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">11</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">12</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">13</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">14</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">15</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">16</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">17</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">18</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">19</span></div>
                                 <!-- Wedding Day Highlight (20th) -->
                                 <div class="flex items-center justify-center h-[30px] md:h-[34px]">
-                                    <div
-                                        class="relative w-[26px] h-[24px] md:w-[30px] md:h-[28px] flex items-center justify-center">
-                                        <svg viewBox="0 0 24 22" class="absolute inset-0 w-full h-full drop-shadow-sm"
-                                            fill="#640e1b">
-                                            <path
-                                                d="M12 21C12 21 1.5 13.5 1.5 7.5C1.5 4.46 3.96 2 7 2C8.76 2 10.35 2.81 11.4 4.09L12 4.8L12.6 4.09C13.65 2.81 15.24 2 17 2C20.04 2 22.5 4.46 22.5 7.5C22.5 13.5 12 21 12 21Z">
-                                            </path>
+                                    <div class="relative w-[26px] h-[24px] md:w-[30px] md:h-[28px] flex items-center justify-center">
+                                        <svg viewBox="0 0 24 22" class="absolute inset-0 w-full h-full drop-shadow-sm" fill="#640e1b">
+                                            <path d="M12 21C12 21 1.5 13.5 1.5 7.5C1.5 4.46 3.96 2 7 2C8.76 2 10.35 2.81 11.4 4.09L12 4.8L12.6 4.09C13.65 2.81 15.24 2 17 2C20.04 2 22.5 4.46 22.5 7.5C22.5 13.5 12 21 12 21Z"></path>
                                         </svg>
-                                        <span class="relative z-10 text-[11px] md:text-[12px] font-bold"
-                                            style="color: rgb(255, 255, 255);">20</span>
+                                        <span class="relative z-10 text-[11px] md:text-[12px] font-bold" style="color: rgb(255, 255, 255);">20</span>
                                     </div>
                                 </div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">21</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">22</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">23</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">24</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">25</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">26</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">27</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">28</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">29</span></div>
-                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span
-                                        class="text-[12px] md:text-[13px]">30</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">21</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">22</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">23</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">24</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">25</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">26</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">27</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">28</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">29</span></div>
+                                <div class="flex items-center justify-center h-[30px] md:h-[34px]"><span class="text-[12px] md:text-[13px]">30</span></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Add to Calendar Links (Google & Apple) -->
+                <!-- Add to Calendar Links -->
                 <div class="mt-4 flex items-center justify-center gap-6">
                     <a href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=K.Chandra%20Bose%20%26%20Gowri%20Shanmugi's%20Wedding&amp;dates=20261120T010000Z/20261120T050000Z&amp;ctz=Asia/Kolkata&amp;details=Join%20us%20to%20celebrate%20the%20wedding%20of%20K.Chandra%20Bose%20%26%20Gowri%20Shanmugi.&amp;location=KSSP%20Kalyana%20Mahal,%20Sivakasi"
                         target="_blank" rel="noopener noreferrer"
@@ -938,74 +642,54 @@
             </div>
         </section>
 
-        <!-- Section 4: Wedding Reception Venue Map -->
+        <!-- Venue Map Section -->
         <div class="relative isolate z-10 w-full pt-[9%] md:pt-[5%]">
             <div class="relative z-10 flex w-full flex-col items-center">
-                <section class="relative flex w-full flex-col gap-3 px-[10%] pb-6 md:px-[14%]"
-                    data-landing-screenshot-id="invite-map">
-
-                    <!-- Venue Details -->
+                <section class="relative flex w-full flex-col gap-3 px-[10%] pb-6 md:px-[14%]">
                     <div class="relative text-center">
                         <h3 class="font-bold text-[18px] md:text-[24px] text-center uppercase tracking-[0.04em]"
-                            style="color: rgb(100, 14, 27); font-family: 'Times New Roman', Times, ChungDoiIndic, serif; font-weight: 700; text-transform: uppercase;">
+                            style="color: rgb(100, 14, 27); font-family: 'Times New Roman', Times, serif; font-weight: 700; text-transform: uppercase;">
                             <span dir="auto">Wedding Reception Venue</span>
                         </h3>
                         <div class="whitespace-pre-line mx-auto mt-1 max-w-[260px] md:max-w-[400px] text-center text-[12px] md:text-[14px] flex flex-col items-center"
-                            style="background-color: transparent; color: rgb(171, 122, 69); font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', ChungDoiIndic, serif;">
+                            style="background-color: transparent; color: rgb(171, 122, 69); font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif;">
                             <span dir="auto">K.S.S. Periyakarupa Nadar Thirumana Mahal<br>Sivakasi</span>
                         </div>
                     </div>
 
-                    <!-- Map & Directions Button -->
-                    <div class="relative flex flex-col items-center gap-4 md:gap-5 w-full" data-showcase-keep="">
-
-                        <!-- Free Google Maps Embed -->
+                    <div class="relative flex flex-col items-center gap-4 md:gap-5 w-full">
                         <iframe class="w-full mt-3 rounded-[15px] h-[250px] md:h-[330px] overflow-hidden"
                             src="https://maps.google.com/maps?q=KSSP+Kalyana+mahal+Sivakasi&t=&z=16&ie=UTF8&iwloc=&output=embed"
                             loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"
                             style="border-color: rgb(171, 122, 69);">
                         </iframe>
-
-                        <!-- Directions Link -->
                         <a href="https://www.google.com/maps/dir/?api=1&destination=KSSP+Kalyana+mahal+Sivakasi"
                             target="_blank" rel="noopener noreferrer"
                             class="inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm md:text-base font-semibold transition-transform hover:scale-[1.03]"
-                            style="background-color: transparent; color: rgb(171, 122, 69); font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', ChungDoiIndic, serif;">
-                            <svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            style="background-color: transparent; color: rgb(171, 122, 69); font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif;">
+                            <svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
                             </svg>
                             <span>Get directions</span>
                         </a>
-
                     </div>
-
                 </section>
-
-                <!-- Decorative Element -->
-                <img alt="" aria-hidden="true"
-                    class="mx-auto block h-auto max-w-[300px] object-contain w-[53.7%] mt-2 md:mt-4" loading="lazy"
-                    decoding="async" src="./images/gold-line.webp">
+                <img alt="" aria-hidden="true" class="mx-auto block h-auto max-w-[300px] object-contain w-[53.7%] mt-2 md:mt-4" loading="lazy" src="./images/gold-line.webp">
             </div>
         </div>
         <div class="relative isolate z-10">
-            <footer
-                class="relative z-20 flex flex-col items-center px-[9%] pb-[62%] text-center md:px-[14%] md:pb-[44%]">
-                <span class="whitespace-pre-line flex flex-col items-center gap-1 text-[11px] md:text-[14px] 
-                                mx-auto md:max-w-[560px]"
-                    style="color: rgb(100, 14, 27); font-family: Roboto, system-ui, ChungDoiIndic, sans-serif; font-weight: 500;"><span
-                        dir="auto">Your presence would be the greatest gift we could receive ❤️</span></span>
+            <footer class="relative z-20 flex flex-col items-center px-[9%] pb-[62%] text-center md:px-[14%] md:pb-[44%]">
+                <span class="whitespace-pre-line flex flex-col items-center gap-1 text-[11px] md:text-[14px] mx-auto md:max-w-[560px]"
+                    style="color: rgb(100, 14, 27); font-family: Roboto, system-ui, sans-serif; font-weight: 500;">
+                    <span dir="auto">Your presence would be the greatest gift we could receive ❤️</span>
+                </span>
             </footer>
-            <img alt="" aria-hidden="true"
-                class="pointer-events-none absolute bottom-[-15%] left-[-40.6%] z-0 h-auto w-[176.6%] max-w-none object-contain md:left-[-18%] md:w-[136%]"
-                alt="" class="block w-full h-auto object-contain pointer-events-none "
-                src="./images/castle.webp">
+            <img alt="" aria-hidden="true" class="pointer-events-none absolute bottom-[-15%] left-[-40.6%] z-0 h-auto w-[176.6%] max-w-none object-contain md:left-[-18%] md:w-[136%]" src="./images/castle.webp">
         </div>
     </div>
 
     <script>
         const random = (min, max) => Math.random() * (max - min) + min;
-        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         const embers = document.getElementById('embers');
         const bokeh = document.getElementById('bokeh');
         const skyLanterns = document.getElementById('skyLanterns');
@@ -1062,7 +746,7 @@
             bokeh.appendChild(glow);
         }
 
-        // Audio & Envelope Opening Control
+        // Audio & Controls
         const audio = document.getElementById('wedding-audio');
         const musicBtn = document.getElementById('music-control-btn');
         const musicSpinner = document.getElementById('music-spinner');
@@ -1073,15 +757,12 @@
         let isProgrammaticScroll = false;
         let autoScrollReqId = null;
 
-        // Only interrupt if the scroll is triggered by the user (not our auto-scroll script)
-        function handleUserScrollInterruption(e) {
+        function handleUserScrollInterruption() {
             if (isProgrammaticScroll) return;
-
             if (!userInterruptedScroll) {
                 userInterruptedScroll = true;
                 isAutoScrolling = false;
                 if (autoScrollReqId) cancelAnimationFrame(autoScrollReqId);
-                if (typeof autoRotateTimer !== 'undefined') clearInterval(autoRotateTimer);
             }
         }
 
@@ -1089,12 +770,12 @@
         window.addEventListener('touchmove', handleUserScrollInterruption, { passive: true });
         window.addEventListener('touchstart', handleUserScrollInterruption, { passive: true });
 
-        // Gentle auto-scroll function with readable speed
+        // Reliable mobile auto-scroll handler
         function startGentleAutoScroll() {
             if (userInterruptedScroll) return;
             isAutoScrolling = true;
 
-            const speed = 0.6; // Readable gentle scroll speed
+            const speed = 0.8; // Slightly increased smooth pace for mobile viewing
             function step() {
                 if (userInterruptedScroll || !isAutoScrolling) return;
 
@@ -1102,7 +783,6 @@
                 window.scrollBy(0, speed);
                 isProgrammaticScroll = false;
 
-                // Stop when reaching the bottom of the page
                 if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight - 5) {
                     isAutoScrolling = false;
                     return;
@@ -1119,7 +799,6 @@
             overlay.style.opacity = '0';
             setTimeout(() => {
                 overlay.style.display = 'none';
-                // Trigger gentle readable auto-scroll right after opening
                 startGentleAutoScroll();
             }, 600);
 
@@ -1146,8 +825,7 @@
             }
         }
 
-
-        // 3D Gallery rotation logic with Auto-Rotation enabled
+        // 3D Gallery rotation logic with touch swipe & auto-rotation support
         let currentIndex = 0;
         const items = document.querySelectorAll('.gallery-item');
         const dots = document.querySelectorAll('.dot-btn');
@@ -1182,43 +860,50 @@
             });
         }
 
-        // Auto-rotate gallery every 1 seconds
+        // Auto-rotate every 2.5 seconds so mobile users have time to see each item
         let autoRotateTimer = setInterval(() => {
             updateGallery(currentIndex + 1);
-        }, 1000);
+        }, 2500);
 
-        // Pause auto-rotation on hover
         const galleryContainer = document.getElementById('galleryContainer');
         if (galleryContainer) {
+            // Pause rotation on touch/hover
             galleryContainer.addEventListener('mouseenter', () => clearInterval(autoRotateTimer));
             galleryContainer.addEventListener('mouseleave', () => {
-                autoRotateTimer = setInterval(() => {
-                    updateGallery(currentIndex + 1);
-                }, 2000);
+                autoRotateTimer = setInterval(() => { updateGallery(currentIndex + 1); }, 2500);
             });
+            galleryContainer.addEventListener('touchstart', () => clearInterval(autoRotateTimer), { passive: true });
+
+            // Touch Swipe Support for Mobile Gallery
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            galleryContainer.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            galleryContainer.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                if (touchEndX < touchStartX - 40) {
+                    updateGallery(currentIndex + 1); // Swipe Left -> Next
+                } else if (touchEndX > touchStartX + 40) {
+                    updateGallery(currentIndex - 1); // Swipe Right -> Prev
+                }
+            }, { passive: true });
         }
 
-        document.getElementById('nextBtn')?.addEventListener('click', () => {
-            updateGallery(currentIndex + 1);
-        });
-
-        document.getElementById('prevBtn')?.addEventListener('click', () => {
-            updateGallery(currentIndex - 1);
-        });
+        document.getElementById('nextBtn')?.addEventListener('click', () => updateGallery(currentIndex + 1));
+        document.getElementById('prevBtn')?.addEventListener('click', () => updateGallery(currentIndex - 1));
 
         dots.forEach((dot, i) => {
-            dot.addEventListener('click', () => {
-                updateGallery(i);
-            });
+            dot.addEventListener('click', () => updateGallery(i));
         });
 
         items.forEach((item, i) => {
-            item.addEventListener('click', () => {
-                updateGallery(i);
-            });
+            item.addEventListener('click', () => updateGallery(i));
         });
 
-        // Live Countdown Timer to November 20, 2026 06:30 AM IST
+        // Live Countdown Timer
         const weddingDate = new Date('2026-11-20T06:30:00+05:30').getTime();
         const countdownElement = document.getElementById('countdownTimer');
 
@@ -1234,7 +919,7 @@
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            const seconds = Math.floor((distance % (1000 * 60 * 60)) / 1000); // fixed seconds calculation
 
             countdownElement.innerHTML = `<p>${days} days ${hours} hours ${minutes} min ${seconds} sec</p>`;
         }
