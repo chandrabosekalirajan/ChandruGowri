@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Gowri & Chandra Bose - Wedding Invitation</title>
+    <title>Chandrabose & Gowri - Wedding Invitation</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -291,6 +291,22 @@
             h1 { font-size: clamp(2.5rem, 10vw, 4rem) !important; }
             #galleryContainer { height: 280px !important; }
         }
+
+        body.locked { overflow: hidden; }
+
+        /* Smoother 3D gallery on mobile GPUs */
+        .gallery-item {
+            will-change: transform, opacity;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+        }
+
+        /* Lighter envelope animation on phones */
+        @media (max-width: 768px) {
+            .ambient-orb { display: none; }
+            .light-wash { filter: none; }
+            .sky-lantern { filter: none; }
+        }
     </style>
 </head>
 
@@ -350,9 +366,9 @@
                     </div>
                     <div class="relative z-10 text-center px-6 pt-28 pb-14 md:pt-24 md:pb-8">
                         <h1 class="mb-2 flex flex-col items-center leading-tight text-3xl sm:text-4xl text-[#640e1b] font-nautigal">
-                            <span class="block w-full text-center">Gowri</span>
+                            <span class="block w-full text-center">Chandru</span>
                             <span class="block w-full text-center text-lg leading-none sm:text-xl font-alexbrush">&amp;</span>
-                            <span class="block w-full text-center">Chandra Bose</span>
+                            <span class="block w-full text-center">Gowri</span>
                         </h1>
                         <div class="flex items-center justify-center gap-3 mb-2">
                             <div class="w-10 h-px" style="background: linear-gradient(to right, transparent, #ab7a45);"></div>
@@ -397,9 +413,9 @@
                     <div aria-hidden="true" class="pointer-events-none absolute left-1/2 top-[20.0%] w-[13.7%] -translate-x-1/2 bg-contain bg-center bg-no-repeat"
                         style="aspect-ratio: 579 / 699; background-image: url('./images/ganesha.webp');"></div>
                     <div class="absolute left-1/2 top-[43.9%] z-20 flex w-[68%] -translate-x-1/2 flex-col items-center gap-[1.2%] text-center leading-[1.15]">
-                        <div class="w-full"><span class="inline-block" style="font-family: 'The Nautigal', cursive; color: rgb(100, 14, 27); font-size: clamp(30px, 12.5vw, 85px);">Gowri</span></div>
+                        <div class="w-full"><span class="inline-block" style="font-family: 'The Nautigal', cursive; color: rgb(100, 14, 27); font-size: clamp(30px, 12.5vw, 85px);">ChandraBose</span></div>
                         <span class="block" style="font-family: 'Alex Brush', 'The Nautigal', cursive; color: rgb(100, 14, 27); font-size: clamp(18px, 6.8vw, 47px);">&amp;</span>
-                        <div class="w-full"><span class="inline-block" style="font-family: 'The Nautigal', cursive; color: rgb(100, 14, 27); font-size: clamp(30px, 12.5vw, 85px);">Chandra Bose</span></div>
+                        <div class="w-full"><span class="inline-block" style="font-family: 'The Nautigal', cursive; color: rgb(100, 14, 27); font-size: clamp(30px, 12.5vw, 85px);">Gowri</span></div>
                     </div>
                 </div>
                 <div class="relative z-0 mt-[-59.6%] w-full" style="aspect-ratio: 441 / 546;">
@@ -443,14 +459,14 @@
                 </div>
                 <div class="w-full min-w-0 relative flex flex-col items-center text-center gap-3 md:gap-4">
                     <h3 class="w-[80%] min-h-[80px] flex items-center justify-center leading-[50px] md:leading-[68px] whitespace-nowrap"
-                        style="font-size: 58px; font-family: 'EB Garamond', serif; color: rgb(100, 14, 27);">Gowri</h3>
-                    <div class="text-xs uppercase tracking-[0.2em]" style="color: rgb(171, 122, 69); font-family: 'Cormorant Garamond', 'Times New Roman', serif; letter-spacing: 0.16em;">
-                        <span dir="auto">Bride</span></div>
-                    <div class="text-[30px] md:text-[38px]" style="color: rgb(100, 14, 27); font-family: 'EB Garamond', serif;">&amp;</div>
-                    <h3 class="w-[80%] min-h-[80px] flex items-center justify-center leading-[50px] md:leading-[68px] whitespace-nowrap"
-                        style="font-size: 58px; font-family: 'EB Garamond', serif; color: rgb(100, 14, 27);">Chandra Bose</h3>
+                        style="font-size: clamp(34px, 11vw, 58px); font-family: 'EB Garamond', serif; color: rgb(100, 14, 27);">ChandraBose</h3>
                     <div class="text-xs uppercase tracking-[0.2em]" style="color: rgb(171, 122, 69); font-family: 'Cormorant Garamond', 'Times New Roman', serif; letter-spacing: 0.16em;">
                         <span dir="auto">Groom</span></div>
+                    <div class="text-[30px] md:text-[38px]" style="color: rgb(100, 14, 27); font-family: 'EB Garamond', serif;">&amp;</div>
+                    <h3 class="w-[80%] min-h-[80px] flex items-center justify-center leading-[50px] md:leading-[68px] whitespace-nowrap"
+                        style="font-size: clamp(34px, 11vw, 58px); font-family: 'EB Garamond', serif; color: rgb(100, 14, 27);">Gowri</h3>
+                    <div class="text-xs uppercase tracking-[0.2em]" style="color: rgb(171, 122, 69); font-family: 'Cormorant Garamond', 'Times New Roman', serif; letter-spacing: 0.16em;">
+                        <span dir="auto">Bride</span></div>
                 </div>
                 <div class="relative w-full pb-10">
                     <div class="relative flex flex-col items-center gap-4 md:gap-5 text-center" style="font-family: Baskerville, 'Libre Baskerville', 'Times New Roman', serif;">
@@ -752,61 +768,59 @@
         const musicSpinner = document.getElementById('music-spinner');
         const audioBars = document.getElementById('audio-bars');
         let isPlaying = false;
-        let userInterruptedScroll = false;
-        let isAutoScrolling = false;
-        let isProgrammaticScroll = false;
-        let autoScrollReqId = null;
 
-        function handleUserScrollInterruption() {
-            if (isProgrammaticScroll) return;
-            if (!userInterruptedScroll) {
-                userInterruptedScroll = true;
-                isAutoScrolling = false;
-                if (autoScrollReqId) cancelAnimationFrame(autoScrollReqId);
-            }
+        /* ---------- Auto-scroll (time-based, only starts AFTER opening) ---------- */
+        const SCROLL_SPEED = 40; // pixels per second, adjust to taste
+        const INTERRUPT_EVENTS = ['wheel', 'touchstart', 'mousedown', 'keydown'];
+        let autoScrolling = false;
+        let scrollRaf = null;
+
+        function stopAutoScroll() {
+            autoScrolling = false;
+            if (scrollRaf) cancelAnimationFrame(scrollRaf);
+            INTERRUPT_EVENTS.forEach(ev => window.removeEventListener(ev, stopAutoScroll));
         }
 
-        window.addEventListener('wheel', handleUserScrollInterruption, { passive: true });
-        window.addEventListener('touchmove', handleUserScrollInterruption, { passive: true });
-        window.addEventListener('touchstart', handleUserScrollInterruption, { passive: true });
+        function startAutoScroll() {
+            let pos = window.scrollY;
+            let lastT = null;
+            autoScrolling = true;
 
-        // Reliable mobile auto-scroll handler
-        function startGentleAutoScroll() {
-            if (userInterruptedScroll) return;
-            isAutoScrolling = true;
+            // Attach listeners now, so the "Open" tap can't trigger them
+            INTERRUPT_EVENTS.forEach(ev => window.addEventListener(ev, stopAutoScroll, { passive: true }));
 
-            const speed = 0.8; // Slightly increased smooth pace for mobile viewing
-            function step() {
-                if (userInterruptedScroll || !isAutoScrolling) return;
+            function step(t) {
+                if (!autoScrolling) return;
+                if (lastT === null) lastT = t;
+                pos += SCROLL_SPEED * Math.max(0, t - lastT) / 1000;
+                lastT = t;
+                window.scrollTo(0, pos);
 
-                isProgrammaticScroll = true;
-                window.scrollBy(0, speed);
-                isProgrammaticScroll = false;
-
-                if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight - 5) {
-                    isAutoScrolling = false;
-                    return;
-                }
-
-                autoScrollReqId = requestAnimationFrame(step);
+                const max = document.documentElement.scrollHeight - window.innerHeight;
+                if (pos >= max - 2) return stopAutoScroll();
+                scrollRaf = requestAnimationFrame(step);
             }
-            autoScrollReqId = requestAnimationFrame(step);
+            scrollRaf = requestAnimationFrame(step);
         }
 
+        /* ---------- Envelope ---------- */
         function openInvitation() {
             const overlay = document.getElementById('envelope-overlay');
             overlay.style.transition = 'opacity 0.6s ease';
             overlay.style.opacity = '0';
+
             setTimeout(() => {
                 overlay.style.display = 'none';
-                startGentleAutoScroll();
+                document.body.classList.remove('locked');
+                window.scrollTo(0, 0);
+                startAutoScroll();
             }, 600);
 
             audio.play().then(() => {
                 isPlaying = true;
-                musicBtn.classList.remove('hidden');
             }).catch(err => {
-                console.log("Audio autoplay restricted:", err);
+                console.log('Audio autoplay restricted:', err);
+            }).finally(() => {
                 musicBtn.classList.remove('hidden');
             });
         }
@@ -825,10 +839,11 @@
             }
         }
 
-        // 3D Gallery rotation logic with touch swipe & auto-rotation support
+        /* ---------- 3D Gallery ---------- */
         let currentIndex = 0;
         const items = document.querySelectorAll('.gallery-item');
         const dots = document.querySelectorAll('.dot-btn');
+        const galleryContainer = document.getElementById('galleryContainer');
 
         function updateGallery(index) {
             currentIndex = (index + items.length) % items.length;
@@ -848,60 +863,53 @@
                     item.style.zIndex = '99';
                 }
             });
-
             dots.forEach((dot, i) => {
-                if (i === currentIndex) {
-                    dot.classList.remove('w-2', 'opacity-25');
-                    dot.classList.add('w-6', 'opacity-70');
-                } else {
-                    dot.classList.remove('w-6', 'opacity-70');
-                    dot.classList.add('w-2', 'opacity-25');
-                }
+                const active = i === currentIndex;
+                dot.classList.toggle('w-6', active);
+                dot.classList.toggle('opacity-70', active);
+                dot.classList.toggle('w-2', !active);
+                dot.classList.toggle('opacity-25', !active);
             });
         }
 
-        // Auto-rotate every 2.5 seconds so mobile users have time to see each item
-        let autoRotateTimer = setInterval(() => {
-            updateGallery(currentIndex + 1);
-        }, 2500);
-
-        const galleryContainer = document.getElementById('galleryContainer');
-        if (galleryContainer) {
-            // Pause rotation on touch/hover
-            galleryContainer.addEventListener('mouseenter', () => clearInterval(autoRotateTimer));
-            galleryContainer.addEventListener('mouseleave', () => {
-                autoRotateTimer = setInterval(() => { updateGallery(currentIndex + 1); }, 2500);
-            });
-            galleryContainer.addEventListener('touchstart', () => clearInterval(autoRotateTimer), { passive: true });
-
-            // Touch Swipe Support for Mobile Gallery
-            let touchStartX = 0;
-            let touchEndX = 0;
-
-            galleryContainer.addEventListener('touchstart', (e) => {
-                touchStartX = e.changedTouches[0].screenX;
-            }, { passive: true });
-
-            galleryContainer.addEventListener('touchend', (e) => {
-                touchEndX = e.changedTouches[0].screenX;
-                if (touchEndX < touchStartX - 40) {
-                    updateGallery(currentIndex + 1); // Swipe Left -> Next
-                } else if (touchEndX > touchStartX + 40) {
-                    updateGallery(currentIndex - 1); // Swipe Right -> Prev
-                }
-            }, { passive: true });
+        // Independent timer: nothing else on the page can clear it by accident
+        let autoRotateTimer = null;
+        function startRotate() {
+            stopRotate();
+            autoRotateTimer = setInterval(() => updateGallery(currentIndex + 1), 3500);
         }
+        function stopRotate() {
+            clearInterval(autoRotateTimer);
+            autoRotateTimer = null;
+        }
+
+        // Only rotate while the gallery is actually on screen (saves battery and GPU)
+        new IntersectionObserver(([entry]) => {
+            entry.isIntersecting ? startRotate() : stopRotate();
+        }, { threshold: 0.2 }).observe(galleryContainer);
+
+        // Hover pause: real mouse devices only (touch devices fake mouseenter and never send mouseleave)
+        if (window.matchMedia('(hover: hover)').matches) {
+            galleryContainer.addEventListener('mouseenter', stopRotate);
+            galleryContainer.addEventListener('mouseleave', startRotate);
+        }
+
+        // Swipe support for mobile
+        let touchStartX = 0;
+        galleryContainer.addEventListener('touchstart', e => {
+            touchStartX = e.touches[0].clientX;
+            stopRotate();
+        }, { passive: true });
+        galleryContainer.addEventListener('touchend', e => {
+            const dx = e.changedTouches[0].clientX - touchStartX;
+            if (Math.abs(dx) > 40) updateGallery(currentIndex + (dx < 0 ? 1 : -1));
+            startRotate();
+        }, { passive: true });
 
         document.getElementById('nextBtn')?.addEventListener('click', () => updateGallery(currentIndex + 1));
         document.getElementById('prevBtn')?.addEventListener('click', () => updateGallery(currentIndex - 1));
-
-        dots.forEach((dot, i) => {
-            dot.addEventListener('click', () => updateGallery(i));
-        });
-
-        items.forEach((item, i) => {
-            item.addEventListener('click', () => updateGallery(i));
-        });
+        dots.forEach((dot, i) => dot.addEventListener('click', () => updateGallery(i)));
+        items.forEach((item, i) => item.addEventListener('click', () => updateGallery(i)));
 
         // Live Countdown Timer
         const weddingDate = new Date('2026-11-20T06:30:00+05:30').getTime();
